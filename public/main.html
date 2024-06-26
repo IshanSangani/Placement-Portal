@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Placement Portal</title>
+<style>
+    /* Basic CSS Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: Arial, sans-serif;
+    }
+    /* Header Styles */
+    header {
+        background-color: #fff; /* Changed to white background */
+        color: #333; /* Changed text color to dark */
+        padding: 10px 0; /* Added padding top and bottom */
+        display: flex; /* Added flexbox for alignment */
+        justify-content: space-between; /* Align items to left and right */
+        align-items: center; /* Align items vertically */
+        width: 100%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+    }
+    header img {
+        width: 100px; /* Adjusted logo width */
+        margin-left: 20px; /* Added margin to align logo to left */
+    }
+    /* Navigation Styles */
+    nav {
+        background-color: #fff; /* Changed to white background */
+        text-align: center;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: center; /* Center navigation items horizontally */
+    }
+    nav ul li {
+        margin: 0 10px;
+        position: relative; /* Added relative positioning */
+    }
+    nav ul li .login-register-options {
+        display: none; /* Initially hidden */
+        position: absolute;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-top: none;
+        width: 100%;
+        text-align: left;
+        z-index: 1000; /* Ensure it's above other content */
+        top: 40px;
+        left: 0;
+    }
+    nav ul li:hover .login-register-options {
+        display: block; /* Show options on hover */
+    }
+    nav ul li a {
+        color: #333; /* Changed text color to dark */
+        text-decoration: none;
+    }
+    nav ul li a:hover {
+        text-decoration: underline; /* Added underline on hover */
+    }
+    /* Main Content Styles */
+    .container {
+        max-width: 800px;
+        margin: 100px auto 50px; /* Adjusted margin to center content vertically */
+        padding: 0 20px;
+        text-align: center; /* Align text to the center */
+    }
+    .image-row {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px; /* Add some margin between rows */
+    }
+    .image-row img {
+        width: 40%; /* Each image takes up 60% of the container width */
+        margin: 0 10px; /* Decreased margin between images */
+    }
+    .get-started-button {
+        margin-top: 1in; /* Moved button 1 inch below the text */
+    }
+    .get-started-button a {
+        background-color: #007bff; /* Blue background color */
+        color: #fff; /* White text color */
+        padding: 10px 20px; /* Added padding */
+        text-decoration: none;
+        border-radius: 5px; /* Rounded corners */
+        transition: background-color 0.3s; /* Smooth transition */
+    }
+    .get-started-button a:hover {
+        background-color: #0056b3; /* Darker blue color on hover */
+    }
+    /* Footer Styles */
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        width: 100%;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <img src="https://www.svkm-iot.ac.in/wp-content/uploads/2023/10/1000100148.png" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="/login">Login/Register</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="image-row">
+            <img src="Image 2.jpg" alt="Image 2">
+            <img src="Image 1.jpg" alt="Image 1">
+            <img src="Image 3.jpg" alt="Image 3">
+            <img src="Image 5.jpg" alt="Image 5">
+            <img src="Image 4.jpg" alt="Image 4">
+        </div>
+    </div>
+    <div class="container">
+        <h2>Welcome to Placement Portal!</h2>
+        <p>Find your dream job or recruit top talents with us.</p>
+        <div class="get-started-button">
+            <a href="#">Get Started</a>
+        </div>
+        <!-- Add more content here -->
+    </div>
+    <footer>
+        <p>&copy; 2024 Placement Portal</p>
+    </footer>
+</body>
+</html>
